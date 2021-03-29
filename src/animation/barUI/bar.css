@@ -1,0 +1,86 @@
+.wrap {
+ 
+  max-width: 20%;
+  margin: 50px 10px 30px 10px;
+  
+}
+h3 {
+  color: blanchedalmond;
+}
+.bar {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 10px;
+  position: relative;
+}
+.bar {
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.bar span {
+  width: 97%;
+  background-color: black;
+  position: relative;
+  left: 10px;
+  display: inline-block;
+  height: 15px;
+  border-radius: 50px;
+}
+.bar span::before {
+    position: absolute;
+    content: "";
+    top:4px;
+    left:6px;
+  width: 80%;
+  height: 50%;
+  background: linear-gradient(to left, red, orange, rgb(177, 207, 3));
+  border-radius: 50px;
+  animation: barIn ease-in 4s;
+}
+@keyframes barIn{
+    from{
+       width:0;
+      height: 30%;
+    }
+   
+}
+ .bar:nth-child(1) span:before{
+width:80%;
+} 
+.bar:nth-child(2) span:before{
+    width:70%;
+    } 
+    .bar:nth-child(3) span:before{
+        width:75%;
+        } 
+
+        .abbr{
+            display: inline-block;
+            width: 50px;
+           color:rgb(1, 49, 1);
+            position: absolute;
+            top:37px;
+            text-align: center; 
+            line-height: 20px;
+            border-radius: 50px;
+            background: linear-gradient(to left, rgb(201, 30, 0), orange, rgb(177, 207, 3));
+            z-index: 1;
+            box-shadow: 0 5px 20px rgb(201, 30, 0),0px 5px 20px orange;
+            animation: abbr  ease-in 4s;
+        }
+        @keyframes abbr{
+            from{
+                left:0px;
+            }
+        }
+        .bar:nth-child(1) abbr {
+            left: 79%;
+        }
+        .bar:nth-child(2) abbr{
+            left: 69% ;
+        }
+        .bar:nth-child(3) abbr{
+            left: 74%;
+        }
