@@ -1,11 +1,8 @@
 import React from "react";
-import Bar from "./animation/barUI/Bar";
-import Circle from "./animation/circle/Circle";
-import ThreeDe from "./animation/svgLayers/ThreeDe";
-
+import Navbar from "./components/Navbar/Navbar";
 
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
+
 
 const App = () => {
   const  digital_root =n=> {
@@ -20,7 +17,7 @@ const App = () => {
   
     <div>
     <Navbar/> 
-    <Bar/>
+ 
 
     
     </div>
